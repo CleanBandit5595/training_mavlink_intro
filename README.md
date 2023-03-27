@@ -15,7 +15,7 @@ They are enthusiastics and quick learners with an eager desire to learn this wor
 You are now inside Amy and Tammy's shoes, Enjoy! 
 
 
-## Phase 1: 
+## Phase 1 - GCS and Ardupilot: 
 
 1. Install gcs (ground control station) to command your drone. This link might help you - https://ardupilot.org/copter/docs/common-install-gcs.html
 
@@ -59,7 +59,7 @@ NOW YOU CAN KEEP GOING
 --------------------------------------------------------
 
 
-## Phase 2: 
+## Phase 2 - MAVProxy: 
 
 1. You're programmeres aren't you? so CLI should feel natural to you than this weird GCS. 
 
@@ -69,12 +69,36 @@ NOW YOU CAN KEEP GOING
 
 4. Feel the application and the options it gives you. 
 
-5. use it along side the GCS. meaning for example - takeoff from one application and guide the drone from the other one (without closing / disconnecting one from antoher). 
-
-6. Answer - 
-
-    - How does the ardupilot can listen from both of these applications ? 
+5. use it along side the GCS. meaning for example - takeoff from one application and guide the drone from the other one (without closing / disconnecting one from antoher). Answer: how does the ardupilot can listen to commands from both of these applications ? 
  
 
-## Phase 3: 
+## Phase 3 - GAZEBO:
+
+So, Amy and Tammy finished playing with the sitl, and the drone didn't arrive yet. They are a little bored and want to see something fly already. They encountered another physical simulator called GAZEBO and wondered if they can use it to see a drone actually elevates, and test it better than the sitl simulator. 
+
+1. Install gazebo garden. there are a lot of confusion lately with gazebo versions, so try to stick to the version ardupilot currently supports officially. Use the following link - https://ardupilot.org/dev/docs/sitl-with-gazebo.html 
+
+2. Using the above link connect your drone in sitl to gazebo. 
+
+3. Perform Phase 2 and watch your drone in gazebo do your actions. 
+
+## Phase 4 - mavlink chitchat and python:
+
+1. Write a python script which creates a mission for the drone, and executes it - 
+
+    connect to the drone 
+    
+    takes off 
+
+    go to 3 different places (defines as variables in the start of the program)
+
+    and finally lands.
+
+
+**hint / requirement / guidance:** don't write a lot of code by yourself, use the community! 
+
+Now you have made your first mission with a python code operating a drone. GOOD JOB! 
+
+2. Answer: what is mavlink ? where can you find the API / ICD of it?  
+
 
